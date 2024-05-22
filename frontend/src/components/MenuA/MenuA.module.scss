@@ -1,0 +1,49 @@
+.mLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+
+    .mDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #84848429;
+
+    p {
+      margin: 0;
+      padding: 15px;
+      color: #292929;
+      font-size: 14px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    Image {
+      width: auto;
+      height: 100%;
+      max-height: 50px;
+    }
+}
+}
+
+.menuA {
+    display: flex;
+    margin-top: 30px;
+}
+
+.mainDiv {
+    width: 100%;
+}
+
+.arrow {
+    margin-right: 15px;
+}
+
+@media (min-width:600px) {
+    .menuA{
+        display: none;
+    }
+}

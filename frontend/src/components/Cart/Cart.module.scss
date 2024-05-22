@@ -1,0 +1,214 @@
+.table_con {
+    max-width: 70%;
+    padding: 60px;
+
+  table {
+    border-collapse: separate;
+    border-spacing: 50px 30px;
+  }
+}
+
+.cart_main {
+    display: flex;
+    justify-content: center;
+}
+
+.finalPrice {
+    width: 500px;
+    padding-top: 110px;
+    padding-left: 50px;
+
+    h1 {
+        padding: 10px;
+        color: #292929;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+    }
+
+    .product_price {
+        padding: 10px;
+        display: flex;
+        gap: 45%;
+        border-bottom: 1px solid #EDEDF0;
+        white-space: nowrap;
+    }
+
+    .delivery_price {
+        padding: 10px;
+        display: flex;
+        gap: 45%;
+        border-bottom: 1px solid #EDEDF0;
+        white-space: nowrap;
+    }
+
+    .final {
+        padding: 10px;
+        padding-top: 36px;
+        display: flex;
+        gap: 64%;
+        border-bottom: 1px solid #EDEDF0;
+        white-space: nowrap;
+    }
+
+    .order {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        button {
+            width: 293px;
+            height: 52px;
+            border-radius: 3px;
+            border: 1px solid #FF4D6D;
+            color: #fff;
+            font-size: 14px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            cursor: pointer;
+            background-color: #FF4D6D;
+        }
+    }
+}
+
+.tableImg {
+    border-radius: 50%;
+}
+
+.cart_title {
+        text-align: center;
+        margin-top: 78px;
+      
+        h1 {
+          color: #292929;
+          font-size: 30px;
+          font-family: 'Montserrat';
+          font-style: normal;
+    }
+}
+
+.delete {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #FF4D6D;
+    border: 1px solid #FF4D6D;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #FF4D6D;
+        color: #fff;
+    }
+
+    p {
+        padding-bottom: 4px;
+    }
+}
+
+.tablePrice {
+    width: 150px;
+}
+
+.itemTitle {
+    color: #292929;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.quantity {
+    color: #292929;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    white-space: nowrap;
+}
+
+.quantity_button {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #FF4D6D;
+    border: none;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+    padding-top: 5px;
+}
+
+@media (max-width: 1250px) {
+    .finalPrice {
+        width: 500px;
+        padding-top: 110px;
+        padding-left: 50px;
+    
+        .product_price {
+            padding: 10px;
+            display: flex;
+            gap: 20%;
+            border-bottom: 1px solid #EDEDF0;
+            white-space: nowrap;
+        }
+    
+        .delivery_price {
+            padding: 10px;
+            display: flex;
+            gap: 20%;
+            border-bottom: 1px solid #EDEDF0;
+            white-space: nowrap;
+        }
+    
+        .final {
+            padding: 10px;
+            padding-top: 36px;
+            display: flex;
+            gap: 50%;
+            border-bottom: 1px solid #EDEDF0;
+            white-space: nowrap;
+        }
+    }
+  }
+
+@media (max-width: 900px) {
+    .cart_main {
+        display: contents;
+        justify-content: center;
+    }
+
+    .finalPrice {
+        width: 500px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .table_con {
+        max-width: 100%;
+        padding: 10px;
+    
+      table {
+        border-collapse: separate;
+        border-spacing: 50px 30px;
+      }
+    }
+}
+
+@media (max-width:600px) {
+    .tablePrice{
+        display: none;
+    }
+    .itemTitle {
+        display: none;
+    }
+    .finalPrice {
+        width: 300px;
+        padding-top: 110px;
+        padding-left: 0;
+    }
+}

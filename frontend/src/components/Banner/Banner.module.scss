@@ -1,0 +1,128 @@
+.container {
+    background-image: url(./../../../public/assets/icons/bannerbg123.svg);
+    background-position: 150px 0;
+    background-size: cover;
+    max-width: 100%;
+    padding: 0 0px;
+    display: flex;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .container img {
+    left: 0;
+    max-height: 900px;
+    width: 50%;
+    min-width: 100px;
+    height: auto;
+  }
+  
+  .text_block {
+    gap: 24px;
+    padding-top: 14vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .text_block h2 {
+    color: #292929;
+  font-size: 42px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 51,2px;
+    margin-bottom: 14px;
+  }
+
+  .text_block p {
+    color: #292929;
+  font-size: 18px;
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+    margin-bottom: 14px;
+  }
+
+  .banner_logo p {
+    color: #292929;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+
+  .banner_logo span {
+    color: #292929;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+
+  .image {
+    transition: transform 0.5s ease;
+  }
+  
+  .banner:hover .image {
+    transform: translateY(-4px);
+  }
+  
+  .banner:hover .image:hover {
+    transform: translateX(1);
+  }
+
+  .image_mobile {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 900px){
+  .image_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+
+      img {
+        left: auto;
+        max-height: 100%;
+        width: 80%;
+        min-width: 80%;
+        height: auto;
+      }
+  }
+
+  .image {
+    display: none;
+  }
+
+  .text_block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .banner_logo{
+    margin-top: 20px;
+  }
+  .text_block h2 {
+  font-size: 24px;
+  }
+
+  .text_block p {
+  font-size: 14px;
+  }
+
+  .banner_logo p {
+    font-size: 18px;
+  }
+}

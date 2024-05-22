@@ -1,0 +1,93 @@
+.holidays {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    h2 {
+        color: #292929;
+        font-size: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        margin-top: 142px;
+    }
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+    position: relative;
+    background-image: url(../../../public/assets/images/Holidays/line.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 105px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+      }
+
+    &:hover .text{
+        color: #FF4D6D;
+      }
+  }
+  
+  .item img {
+    width: 50%;
+    height: 85%;
+  }
+
+  .birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+    max-width: 300px; 
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+      }
+
+      &:hover .text{
+        color: #FF4D6D;
+      }
+
+    img {
+        width: 90%;
+        height: 85%;
+    }
+
+    .text {
+        color: #292929;
+        font-size: 14px;
+        font-family: 'Montserrat bold';
+        max-width: 200px;
+        text-align: center;
+        padding-right: 30px;
+    }
+  }
+
+  .item .text {
+    color: #292929;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    position: absolute;
+    padding-top: 170px;
+    text-align: center;
+    max-width: 150px;
+  }
+
+  @media (max-width: 1250px) {
+    .holidays {
+      display: none;
+    }
+  }

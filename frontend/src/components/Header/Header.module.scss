@@ -1,0 +1,135 @@
+.header {
+    background-color: #fff !important;
+    z-index: 10;
+    top: -1px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  .lowerHeader {
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+  
+  .navList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navItem {
+    margin-right: 30px;
+    padding-top: 55px;
+  }
+
+  .navItems {
+    margin-right: 30px;
+    padding-top: 55px;
+  }
+  
+  .subNavList {
+    list-style: none;
+    display: flex;
+  }
+
+  .subNavListsub {
+    list-style: none;
+    display: flex;
+  }
+
+  .subNavItem {
+    margin-left: 5px;
+  }
+  
+  .text {
+    font-family: 'Proxima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+
+    &:hover {
+      position: relative;
+  
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        height: 2px;
+        background-color: #FF4D6D;
+      }
+    }
+  }
+
+  .textno {
+    font-family: 'Proxima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+  }
+
+  .navItemRight {
+    margin-left: 30px;
+    padding-top: 55px;
+  }
+
+  .navItemRights {
+    margin-left: 30px;
+    padding-top: 55px;
+  }
+
+  .submenus {
+    position: absolute;
+    width: 220px;
+    background: #ffffff;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+      li {
+        padding: 9px 5px;
+        transition: background-color 0.3s ease-in-out;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 1px;
+          border: 1px solid rgb(231, 231, 231);
+          pointer-events: none;
+        }
+      }
+  }
+  
+  .subNavItemsub {
+    margin-left: 5px;
+  
+    &:hover .submenus {
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .header {
+        display: none;
+    }
+}

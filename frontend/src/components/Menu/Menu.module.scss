@@ -1,0 +1,165 @@
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 570px;
+    height: 260px;
+    align-items: center;
+}
+
+@mixin card_title {
+    margin-top: 20px;
+    color: #292929;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin-top: 40px;
+  }
+  
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .card_1 {
+    @include card;
+    background: {
+      image: linear-gradient(336deg, rgb(253,224,205) 80%, rgb(253,233,219) 20%);
+      position: 0;
+      size: 400%;
+    }
+    transition: background 500ms ease-in-out;
+  }
+  
+  .card_1:hover {
+    background-position: 100%;
+  }
+
+  .card_2 {
+    @include card;
+    background: {
+        image: linear-gradient(24deg, rgb(253,204,212) 80%, rgb(253,219,224) 20%);
+        position: 100%;
+        size: 400%;
+      }
+      transition: background 500ms ease-in-out;
+  }
+
+  .card_2:hover {
+    background-position: 0;
+  }
+
+    .card_3 {
+    @include card;
+    background: {
+        image: linear-gradient(204deg, rgb(193,236,192) 80%, rgb(211,241,211) 20%);
+        position: 0;
+        size: 400%;
+      }
+      transition: background 500ms ease-in-out;
+  }
+
+  .card_3:hover {
+    background-position: 100%;
+  }
+
+  .card_4 {
+    @include card;
+    background: {
+        image: linear-gradient(156deg, rgb(251,219,213) 80%, rgb(252,230,225) 20%);
+        position: 100%;
+        size: 400%;
+      }
+      transition: background 500ms ease-in-out;
+  }
+
+  .card_4:hover {
+    background-position: 0;
+  }
+
+  .card_5 {
+    @include card;
+    background: {
+        image: linear-gradient(336deg, rgb(183,225,227) 80%, rgb(204,234,235) 20%);
+        position: 0;
+        size: 400%;
+      }
+      transition: background 500ms ease-in-out;
+  }
+
+  .card_5:hover {
+    background-position: 100%;
+  }
+
+  .card_6 {
+    @include card;
+    background: {
+        image: linear-gradient(24deg, rgb(206,207,238) 80%, rgb(220,221,243) 20%);
+        position: 100%;
+        size: 400%;
+      }
+      transition: background 500ms ease-in-out;
+  }
+
+  .card_6:hover {
+    background-position: 0;
+  }
+
+  .card_1 h2{
+    @include card_title
+  }
+
+  .card_2 h2{
+    @include card_title
+  }
+
+  .card_3 h2{
+    @include card_title
+  }
+
+  .card_4 h2{
+    @include card_title
+  }
+
+  .card_5 h2{
+    @include card_title
+  }
+
+  .card_6 h2{
+    @include card_title
+  }
+
+  .card_content{
+    max-width: 463px;
+    margin-top: 36px;
+  }
+
+  .menu_card_text {
+    margin-top: 10px;
+    color: #292929;
+    font-size: 16px;
+    font-family: 'Proxima';
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1250px) {
+    .menu {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      display: none;
+    }
+  }

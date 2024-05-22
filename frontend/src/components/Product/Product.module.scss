@@ -1,0 +1,60 @@
+@import 'mixins';
+
+.product_con_title {
+    text-align: center;
+    margin-top: 100px;
+  
+    h1 {
+      color: #292929;
+      font-size: 30px;
+      font-family: 'Montserrat';
+      font-style: normal;
+    }
+  }
+
+.productCon {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.button {
+    @include button;
+    margin-top: 52px;
+    color: #292929;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+@media (max-width: 1250px) {
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product_con_title {
+    text-align: center;
+    margin-top: 100px;
+  
+    h1 {
+      color: #292929;
+      font-size: 24px;
+      font-family: 'Montserrat';
+      font-style: normal;
+    }
+  }
+}

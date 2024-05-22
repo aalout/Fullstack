@@ -1,0 +1,36 @@
+.promocard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 270px;
+    height: 380px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.promotitle {
+    text-align: center;
+    width: 100%;
+    background-color: #FF4D6D;
+    height: 27px;
+}
+
+.promotitle h3 {
+    padding-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.promotext {
+    width: 230px;
+    margin-top: 20px;
+}
+
+.promotext p {
+    color: #292929;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}

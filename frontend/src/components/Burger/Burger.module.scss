@@ -1,0 +1,86 @@
+.mobileHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background-color: #F7EBE5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.logodiv {
+    display: flex;
+    margin: 0 auto;
+}
+
+.cartdiv {
+    display: flex;
+    padding: 15px;
+}
+
+.burgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 30px;
+}
+
+.nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #F7EBE5;
+    color: #292929;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.open {
+    display: flex;
+}
+
+.nav a {
+    color: #292929;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-family: 'Proxima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+
+    img {
+        margin-bottom: 2px;
+    }
+}
+
+@media (min-width: 900px) {
+    .mobileHeader {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+}

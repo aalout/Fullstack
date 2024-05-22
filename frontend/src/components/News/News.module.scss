@@ -1,0 +1,130 @@
+@import 'mixins';
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .newsCon {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin-top: 50px;
+  }
+  
+  .news_con_title {
+    text-align: center;
+    margin-top: 100px;
+  
+    h1 {
+      color: #292929;
+      font-size: 30px;
+      font-family: 'Montserrat';
+      font-style: normal;
+    }
+  }
+  
+  .arrows {
+    position: absolute;
+    bottom: 60%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 34px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+  }
+
+  .indicator {
+    position: static;
+    margin-top: 250px;
+    margin-left: 1150px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dot.active,
+  .dot:hover {
+    background-color: #FF4D6D;
+  }
+
+  .button {
+    @include button;
+  }
+
+  .button_con {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 2500px) {
+    .arrows {
+      transform: translateY(50%);
+      width: 58%;
+    }
+  }
+  
+  @media (max-width: 2200px) {
+    .arrows {
+      transform: translateY(50%);
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 1800px) {
+    .arrows {
+      transform: translateY(50%);
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .indicator {
+      margin-top: 250px;
+      margin-left: 600px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .news {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .indicator {
+      margin-top: 250px;
+      margin-left: 300px;
+    }
+    .news_con_title {
+      text-align: center;
+      margin-top: 100px;
+    
+      h1 {
+        color: #292929;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-style: normal;
+      }
+    }
+  }
