@@ -2,7 +2,7 @@ import { Cart } from '../types/cart';
 
 export const updateQuantity = async (id: number, quantity: number) => {
     try {
-      const response = await fetch(`http://178.154.206.159:7676/api/cart/${id}`, {
+      const response = await fetch(`http://84.201.170.155:3031/api/cart/${id}`, {
         mode: 'cors',
         method: 'PATCH',
         headers: {

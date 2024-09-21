@@ -4,7 +4,7 @@ import { Promo } from "../types/promo"
 import { News } from "../types/news"
 import { Cart } from '@/types/cart'
 
-const BASE = 'http://178.154.206.159:7676/api'
+const BASE = 'http://84.201.170.155:3031/api'
 
 export async function fetchProducts(): Promise<Product[]> {
   const res = await fetch(`${BASE}/Product`);

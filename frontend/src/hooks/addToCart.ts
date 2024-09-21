@@ -5,7 +5,7 @@ export const addToCart = async (productId: number, quantity: number, price: numb
   const cartData: Omit<Cart, 'id'> = { userId, productId, quantity, price, title, image };
 
   try {
-    const response = await fetch('http://178.154.206.159:7676/api/cart', {
+    const response = await fetch('http://84.201.170.155:3031/api/cart', {
       mode: 'cors',
       method: 'POST',
       headers: {
