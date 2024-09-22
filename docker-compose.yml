@@ -3,6 +3,8 @@ version: '3'
 services:
   frontend:
     build: ./frontend
+      environment:
+    - NODE_VERSION=18.19.1
     ports:
       - "3000:3000"
     depends_on:

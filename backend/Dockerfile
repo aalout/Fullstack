@@ -1,5 +1,5 @@
 # Установка Node.js
-FROM node:14
+FROM node:18.19.1
 
 # Установка зависимостей
 WORKDIR /app
